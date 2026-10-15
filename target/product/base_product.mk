@@ -33,3 +33,7 @@ PRODUCT_PACKAGES += \
 # Packages included only for eng or userdebug builds, previously debug tagged
 PRODUCT_PACKAGES_DEBUG += \
     adb_keys \
+
+# No GrapheneOS boot animation: the stock Android one is drawn when there is no zip, with
+# our own logo until the first setup is done (frameworks/base BootAnimation::android).
+PRODUCT_PACKAGES := $(filter-out bootanimation_zip,$(PRODUCT_PACKAGES))
