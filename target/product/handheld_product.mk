@@ -37,6 +37,7 @@ PRODUCT_PACKAGES += \
     SpeechServices \
     talkback \
     ThemePicker \
+    Ee1osWallpapers \
     ThemesStub \
     TrichromeChrome \
     frameworks-base-overlays
